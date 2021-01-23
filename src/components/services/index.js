@@ -1,32 +1,32 @@
-import React from 'react'
-import Title from '../../widgets/typography/title'
-import Heading from '../../widgets/typography/heading'
-import SubTitle from '../../widgets/typography/subtitle'
+import React from 'react';
+import Heading from '../../widgets/typography/heading';
+import SubTitle from '../../widgets/typography/subtitle';
+import Title from '../../widgets/typography/title';
+import ServiceCard from './component/service_card';
 import './services.css'
 
-
-const Services = (props) => {
-    return  <div className = "services_container">
-        <Title color="#222">Statement of Purpose</Title>
-        <br/> <br/>
-        <div className ="services">
-            <div className ="service">
-                <SubTitle>LOGO</SubTitle>
-                <Heading>What we Provide</Heading>
-                <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-            </div>
-            <div className ="service">
-                <SubTitle>LOGO</SubTitle>
-                <Heading>What we Provide</Heading>
-                <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-            </div>
-            <div className ="service">
-                <SubTitle>LOGO</SubTitle>
-                <Heading>What we Provide</Heading>
-                <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-            </div>
-        </div>
-        </div>
+const Services = () => {
+  return <div className="services_container">
+    <Title color="#222">Statement of faith</Title>
+    <br /><br />
+    <div className="services">
+      <ServiceCard
+        title="Who are you"
+        description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard "
+        logo="Logo"
+      />
+      <ServiceCard
+        title="How are you?"
+        description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard "
+        logo="Logo"
+      />
+      <ServiceCard
+        title="How are you?"
+        description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard "
+        logo="Logo"
+      />
+    </div>
+  </div>
 }
 
-export default Services
+export default Services;
