@@ -21,7 +21,7 @@ const Services = () => {
         logo="Logo"
       />
       <ServiceCard
-        title="How are you?"
+        title="Why are you?"
         description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard "
         logo="Logo"
       />
