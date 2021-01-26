@@ -1,0 +1,22 @@
+.eventCard{
+    text-align: center;
+    
+    
+    text-align:center
+}
+
+.services_container{
+    width:85%;
+    margin :auto;
+    padding:40px 0px;
+
+}
+
+.services{
+    display: flex;
+}
+
+.service{
+    text-align: center;
+    padding: 10px;
+}

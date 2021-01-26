@@ -1,0 +1,15 @@
+.events_container{
+    background-color: aqua;
+    width :85% ;
+    margin:auto;
+    padding-top:20px
+}
+.events{
+    background-color: greenyellow;
+    display:flex;
+    /* align-items:center;
+    justify-items: center; */
+    padding-right:20px;
+    padding-top:25px
+}
+
