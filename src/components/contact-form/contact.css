@@ -16,3 +16,7 @@
 #contact-form textarea{
     height: 100px
 }
+
+.error{
+    color:red
+}
