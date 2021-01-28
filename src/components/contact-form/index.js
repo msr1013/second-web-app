@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './contact.css'
-import Button from '../../widgets/button'
+// import Button from '../../widgets/button'
+import { Button, FormGroup, Label, FormText, Input } from 'reactstrap';
 class Form extends Component {
     state = {
         name: '',
@@ -80,13 +81,28 @@ class Form extends Component {
 
                 <h1>Contact Us</h1>
                 <form onSubmit={this.handleFormSubmit}>
-                    <input type="text" className={this.state.errors.name ? 'error-block' : ''} name="name" value={name} placeholder="Name" onChange={this.handleChange} />
-                    <div className="error">{this.state.errors.name}</div>
-                    <input type="text" name="email" value={email} placeholder="Email" onChange={this.handleChange} />
-                    <input type="text" name="phone" value={phone} placeholder="Phone" onChange={this.handleChange} />
-                    <textarea name="message" className={this.state.errors.message ? 'error-block' : ''} placeholder="Message" value={message} onChange={this.handleChange}></textarea>
-                    <div className="error">{this.state.errors.message}</div>
-                    <Button type="submit" title="Submit" />
+                    {/* <input type="text" className={this.state.errors.name ? 'error-block' : ''} name="name" value={name} placeholder="Name" onChange={this.handleChange} />
+                    <div className="error">{this.state.errors.name}</div> */}
+                    {/* <input type="text" name="email" value={email} placeholder="Email" onChange={this.handleChange} />
+                    <input type="text" name="phone" value={phone} placeholder="Phone" onChange={this.handleChange} />*/}
+                    <FormGroup>
+                        <Label for="exampleEmail">Email</Label>
+                        <Input type="email" name="email" id="exampleEmail" placeholder="with a placeholder" />
+                    </FormGroup>
+                    <FormGroup>
+                        <Label for="exampleSelect">Select</Label>
+                        <Input type="select" name="select" id="exampleSelect">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </Input>
+                    </FormGroup>
+                    {/* <textarea name="message" className={this.state.errors.message ? 'error-block' : ''} placeholder="Message" value={message} onChange={this.handleChange}></textarea>
+                    <div className="error">{this.state.errors.message}</div> */}
+                    {/* <Button type="submit" title="Submit" /> */}
+                    <Button size="lg" onClick={null} color="info" outline> Submit</Button>
                 </form>
 
             </div>
